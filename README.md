@@ -1,5 +1,31 @@
 # lambdata-12
 
+
+
+
+
+
+
+Using the package from PIPY instructions:
+
+```py
+from my_lambdata.my_mod import enlarge
+
+enlarge(5) #> 500
+```
+
+
+
+
+
+
+
+
+<hr>
+
+Contributing instructions.
+
+
 ## Installation
 
 ```sh
