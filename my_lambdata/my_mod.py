@@ -4,10 +4,13 @@
 
 def enlarge(n):
     """
-    Param n is a number
+    Param n is a number (int or float)
+
     Function will enlarge the number
+
+    Returns another number (float)
     """
-    return n * 100
+    return n * 100.0
 
 
 # this code breaks our ability to import enlarge from other files
