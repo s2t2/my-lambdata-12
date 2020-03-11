@@ -11,6 +11,9 @@ print("HELLO WORLD")
 df = pandas.DataFrame({"state": ["CT", "CO", "CA", "TX"]})
 print(df.head())
 
+df2 = pandas.DataFrame({"state": ["AZ", "DC", "MI", "WI"]})
+print(df2.head())
+
 print("-----------------")
 
 
