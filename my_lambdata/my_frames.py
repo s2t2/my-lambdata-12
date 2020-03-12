@@ -77,17 +77,23 @@ class MyFrame(pandas.DataFrame):
         #breakpoint() # python 3.7 or later, otherwise use pdb module
         self["name"] = self["abbrev"].map(names_map) # see: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.map.html
 
-#df1 = pandas.DataFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
-#df2 = pandas.DataFrame({"abbrev": ["AZ", "DC", "CO", "MI", "WI"]})
+if __name__ == "__main__":
+    # invoke all the code below (only if run from the command-line)
+    # not if imported from another file (like a test)
 
-print("-------")
-my_frame = MyFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
-print(type(my_frame))
-my_frame.add_state_names()
-print(my_frame.head())
+    #df1 = pandas.DataFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
+    #df2 = pandas.DataFrame({"abbrev": ["AZ", "DC", "CO", "MI", "WI"]})
 
-print("-------")
-my_frame = MyFrame({"abbrev": ["AZ", "DC", "CO", "MI", "WI"]})
-print(type(my_frame))
-my_frame.add_state_names()
-print(my_frame.head())
+    print("-------")
+    my_frame = MyFrame({"abbrev": ["CT", "CO", "CA", "TX"]})
+    print(type(my_frame))
+    my_frame.add_state_names()
+    print(my_frame.head())
+
+    print("-------")
+    my_frame = MyFrame({"abbrev": ["AZ", "DC", "CO", "MI", "WI"]})
+    print(type(my_frame))
+    my_frame.add_state_names()
+    print(my_frame.head())
+
+    input("PLEASE BLAH")
